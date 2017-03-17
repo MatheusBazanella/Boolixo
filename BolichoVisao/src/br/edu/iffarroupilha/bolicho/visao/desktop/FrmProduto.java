@@ -6,12 +6,16 @@
 
 package br.edu.iffarroupilha.bolicho.visao.desktop;
 
+import java.awt.FlowLayout;
 import java.awt.HeadlessException;
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 /**
  *<p>
- * Classe que repreenta a interface 
+ * Classe que repreenta a interface para o produto
  *</p>
  * @author Matheus Coffy Bazanella 
  * @version 1.0
@@ -20,9 +24,31 @@ import javax.swing.JFrame;
  */
 public class FrmProduto extends JFrame{
 
-    public FrmProduto() {
+    public FrmProduto(BolichoMain principal) {
+        setTitle("Bolicho -> Produto");
+        setSize(320, 240);
+        setLocationRelativeTo(principal);
+        desenhaComponentes();
         
         
+        setVisible(true);
+    }
+
+    private void desenhaComponentes() {
+    
+        JLabel jblDescricao = new JLabel("Descrição"); 
+        JLabel jblPreco = new JLabel("Preço");
+        JTextField jtlDescricao = new JTextField(30);
+        JTextField jtlPreco = new JTextField(30);
+        JButton btnGravar = new JButton("Grevar");
+        
+        setLayout(new FlowLayout(FlowLayout.LEFT));
+        
+        add(jblDescricao);
+        add(jtlDescricao);
+        add(jblPreco);
+        add(jtlPreco);
+        add(btnGravar);
     }
     
 

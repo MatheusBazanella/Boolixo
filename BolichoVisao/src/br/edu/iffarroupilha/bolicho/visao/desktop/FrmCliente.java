@@ -52,8 +52,8 @@ public class FrmCliente extends JFrame{
         // adiciona os componentes em tela
         
         add(lblCpf);
-        add(lblNome);
         add(txtCpf);
+        add(lblNome);
         add(txtNome);
         add(bntGravar);
         

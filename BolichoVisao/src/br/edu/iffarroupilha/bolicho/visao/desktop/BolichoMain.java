@@ -82,7 +82,7 @@ public class BolichoMain extends JFrame{
        produto.addActionListener(new ActionListener() {
             
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(BolichoMain.this, "Voce Clicou");
+                new FrmProduto(BolichoMain.this);
             
             }
         });
