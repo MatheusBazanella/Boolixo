@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package br.edu.iffarroupilha.bolichomodelo;
+package br.edu.iffarroupilha.bolicho.modelo;
 
 /**
  *<p>
