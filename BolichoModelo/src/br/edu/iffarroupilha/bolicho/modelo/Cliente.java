@@ -6,6 +6,13 @@
 
 package br.edu.iffarroupilha.bolicho.modelo;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+
+
 /**
  *<p>
  *</p>
@@ -14,9 +21,13 @@ package br.edu.iffarroupilha.bolicho.modelo;
  * @since 2017
  *
  */
+@Entity
 public class Cliente {
 
+    @Id
+    @Column(nullable = false)
     private int cpf;
+    @Column(length = 40, nullable = false)
     private String nome;
 
     public int getCpf() {
